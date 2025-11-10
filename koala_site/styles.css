@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 body {
-  background-color: #fdf6e3;
-  margin: 0;
-  padding: 0;
+  background-color: #fdf6e3; /* Solarized base3 */
   font-family: "Helvetica", "Arial", sans-serif;
-  color: #586e75;
+  color: #586e75;      /* Solarized base00 */
+  
+  /* Container styles applied to all pages */
+  width: 90%;
+  margin: 1em auto; /* Centers the container */
+  padding: 2rem;
+  border: 10px solid #268bd2; /* Solarized blue */
+  box-sizing: border-box; /* Ensures padding/border are part of the width */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,8 +47,13 @@ nav ul {
     list-style-type: none;
     padding: 0.625em 0;
     margin: 0;
-    text-align: center;
     background-color: #eee8d5;
+
+    /* Responsive Flexbox styles added */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Helps if you add more links */
 }
 
 nav li {
@@ -63,4 +73,17 @@ nav a {
 nav a:hover {
     color: #fff;
     background-color: #cb4b16;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 1rem;
+  }
+
 }
