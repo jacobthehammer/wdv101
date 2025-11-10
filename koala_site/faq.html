@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Koala FAQ - Frequently Asked Questions</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Frequently asked questions about Koalas." />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Frequently asked questions about Koalas.">
+    <link rel="stylesheet" href="styles.css">
     <style>
-  body {
-    margin: 0;
-    padding: 2rem;
-    border: 10px solid #268bd2; /* Solarized blue */
-    background-color: #fdf6e3;   /* Solarized base3 */
-    font-family: "Helvetica", "Arial", sans-serif;
-    color: #586e75;              /* Solarized base00 */
-  }
+      main {
+        column-count: 3;
+        column-gap: 2em;
+        column-rule: 1px solid #eee8d5;
+      }
 
-  main {
-    column-count: 3;
-    column-gap: 2em;
-    column-rule: 1px solid #eee8d5;
-  }
+      main h2, main p, main img {
+        break-inside: avoid;
+        padding-top: 0.25em;
+      }
 
-  main h2, main p, main img {
-    break-inside: avoid;
-    padding-top: 0.25em;
-  }
-
-  main img {
-      max-width: 100%;
-      height: auto;
-  }
-
+      main img {
+          max-width: 100%;
+          height: auto;
+      }
+      @media (max-width: 600px) {
+        main {
+          column-count: 1;
+        }
+      }
   </style>
 </head>
 <body>
@@ -39,9 +34,9 @@
         <img src="images/koala_banner.jpg" alt="Image source: Canvas module" width="960" height="190">
   <nav>
      <ul>
-       <li><a href= "https://wdv101.hemmerich.co/wdv101/koala_site/index.html">Home</a></li>
-       <li><a href= "https://wdv101.hemmerich.co/wdv101/koala_site/save_koalas.html">Save Koalas</a></li>
-       <li><a href= "https://wdv101.hemmerich.co/wdv101/koala_site/faq.html">FAQ</a></li>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="save_koalas.html">Save Koalas</a></li>
+       <li><a href="faq.html">FAQ</a></li>
        <li>Gallery</li>
        <li>Adopt</li>
        <li>Contact Us</li>
@@ -75,7 +70,7 @@
         <h2>What do Koala's eat?</h2>
         <p>Koalas consume eucalyptus leaves and bark from 12 different eucalyptus tree species. They also consume mistletoe and box leaves. Koalas consume eucalyptus leaves and bark from 12 different eucalyptus tree species. They also consume mistletoe and box leaves.</p>
         <img src="images/eucalyptus.jpg" alt="Image source: Hans on Pixabay" width="640" height="480">
-S
+        
         <h2>How do Koala's behave?</h2>
         <p>Nocturnal mammals, koalas sleep for up to 16 hours a day. They are arboreal, which means that they live in trees. They do not live in big groups but rather prefer to be alone.</p>
 
