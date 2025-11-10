@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Koala Gallery</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A gallery of koalas at the KBNIC.">
+  <meta name="author" content="Jacob Hemmerich">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    main {
+  
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      gap: 1em;
+    }
+
+    figure {
+      margin: 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      background-color: #eee8d5;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+      display: block;
+    }
+
+    figcaption {
+      padding: 0.75em;
+      text-align: center;
+      font-weight: bold;
+      color: #586e75;
+      font-style: normal;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+<img src="images/koala_banner.jpg" alt="Image source: Canvas module" width="960" height="190">
+<header>
+<h1>Koala Bear National Information Center</h1>
+  <nav>
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="save_koalas.html">Save Koalas</a></li>
+       <li><a href="faq.html">FAQ</a></li>
+        <!-- This is the new link -->
+       <li><a href="gallery.html">Gallery</a></li>
+       <li>Adopt</li>
+       <li>Contact Us</li>
+     </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Koala Gallery</h1>
+    <div class="column">
+    <figure>
+      <img src="koala_gallery/ella.jpg" alt="A koala named Ella" width="250" height="250">
+      <figcaption>Ella - female</figcaption>
+    </figure>
+    
+    <figure>
+      <img src="koala_gallery/grant.jpg" alt="A koala named Grant" width="250" height="250">
+      <figcaption>Grant - male</figcaption>
+    </figure>
+    
+    <figure>
+      <img src="koala_gallery/jams.jpg" alt="A koala named Jams" width="250" height="250">
+      <figcaption>Jams - male</figcaption>
+    </figure>
+  </div>
+  <div class="column">
+    <figure>
+      <img src="koala_gallery/jilley_and_baby.jpg" alt="A koala named Jilley with her baby" width="250" height="250">
+      <figcaption>Jilley and baby - female and joey</figcaption>
+    </figure>
+
+    <figure>
+      <img src="koala_gallery/lucy.jpg" alt="A koala named Lucy" width="250" height="250">
+      <figcaption>Lucy - female</figcaption>
+    </figure>
+
+    <figure>
+      <img src="koala_gallery/miffy.jpg" alt="A koala named Miffy" width="250" height="250">
+      <figcaption>Miffy - female</figcaption>
+    </figure>
+  </div>
+  <div class="column">
+    <figure>
+      <img src="koala_gallery/niley.jpg" alt="A koala named Niley" width="250" height="250">
+      <figcaption>Niley - male</figcaption>
+    </figure>
+
+    <figure>
+      <img src="koala_gallery/nooka_and_baby.jpg" alt="A koala named Nooka with her baby" width="250" height="250">
+      <figcaption>Nooka and baby - female and joey</figcaption>
+    </figure>
+
+    <figure>
+      <img src="koala_gallery/oliver.jpg" alt="A koala named Oliver" width="250" height="250">
+      <figcaption>Oliver - male</figcaption>
+    </figure>
+  </div>
+
+</main>
+
+<footer>
+<p> © 2024 All rights reserved. <img src="images/koala_logo.gif" alt="Image source: Canvas module" width="200" height="194"></p>
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<a href="#">Back to top</a>
+</footer>
+</body>
+</html>
