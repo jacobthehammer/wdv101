@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adopt a Koala - Koala Information Center</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Adopt a koala!">
+  <meta name="author" content="Jacob Hemmerich">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    fieldset {
+      border: 2px solid #268bd2;
+      border-radius: 8px;
+      background-color: #eee8d5; 
+      padding: 1em 2em;
+      margin-bottom: 1.5em; 
+    
+    }
+
+    legend {
+      font-family: "EB Garamond", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #268bd2;
+      text-transform: uppercase;
+      letter-spacing: 0.0625em;
+      font-size: 1.5em;
+      padding: 0 0.5em;
+      background-color: #fdf6e3;
+    }
+
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.25em;
+    }
+
+    .form-row label {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: #586e75;
+      font-style: normal;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row input[type="tel"],
+    .form-row select,
+    .form-row textarea {
+      width: 100%;
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 1em;
+      color: #586e75;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    
+    /* NEW styles for checkbox and radio groups */
+    .option-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5em;
+    }
+
+    .option-group div {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
+
+    .option-group label {
+      font-weight: normal;
+      margin-bottom: 0;
+      font-style: normal;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .button-row input[type="submit"],
+    .button-row input[type="reset"] {
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .button-row input[type="submit"] {
+      background-color: #268bd2;
+      color: white;
+    }
+    
+    .button-row input[type="submit"]:hover {
+      background-color: #2aa198;
+      transform: scale(1.02);
+    }
+
+    .button-row input[type="reset"] {
+      background-color: #dc322f;
+      color: white;
+    }
+
+    .button-row input[type="reset"]:hover {
+      background-color: #cb4b16; 
+      transform: scale(1.02);
+    }
+
+    @media (min-width: 700px) {
+      .form-row {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .form-row label:not(.option-group label) {
+        flex-basis: 150px; 
+        flex-shrink: 0;
+        margin-bottom: 0;
+        margin-right: 1em;
+        text-align: right;
+      }
+    
+      .form-row.top-align {
+        align-items: flex-start;
+      }
+      .form-row.top-align label {
+        padding-top: 0.75em; 
+      }
+
+      .form-row input[type="text"],
+      .form-row input[type="email"],
+      .form-row input[type="tel"],
+      .form-row select,
+      .form-row textarea,
+      .option-group { /* Group takes up the flex space */
+        flex-grow: 1; /* Allows input to fill remaining space */
+      }
+      .option-group {
+        flex-direction: column; /* Stack options vertically */
+        gap: 0.75em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<img src="images/koala_banner.jpg" alt="Image source: Canvas module" width="960" height="190">
+<header>
+<h1>Koala Bear National Information Center</h1>
+  <nav>
+  	<ul>
+  		<li><a href="index.html">Home</a></li>
+  		<li><a href="save_koalas.html">Save Koalas</a></li>
+  		<li><a href="faq.html">FAQ</a></li>
+  		<li><a href="gallery.html">Gallery</a></li>
+        <!-- This is the new link -->
+  		<li><a href="adopt.html">Adopt</a></li>
+  		<li><a href="contact_us.html">Contact Us</a></li>
+  	</ul>
+  </nav>
+</header>
+
+<main>
+  
+  <form action="form_handler.php" method="POST">
+    
+    <!-- Personal Info Fieldset -->
+    <fieldset>
+      <legend>Your Information</legend>
+      <div class="form-row">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+      </div>
+      <div class="form-row">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-row">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="form-row">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <div class="form-row">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" maxlength="2" style="max-width: 100px;">
+      </div>
+      <div class="form-row">
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" inputmode="numeric" pattern="\d{5}" style="max-width: 150px;">
+      </div>
+    </fieldset>
+
+    <!-- Adoption Details Fieldset -->
+    <fieldset>
+      <legend>Adoption Details</legend>
+      
+      <!-- Koala Selection - Checkboxes -->
+      <div class="form-row top-align">
+        <label>Koala(s):</label>
+        <div class="option-group">
+          <div><input type="checkbox" id="koala_ella" name="koala_ella" value="yes"><label for="koala_ella">Ella</label></div>
+          <div><input type="checkbox" id="koala_grant" name="koala_grant" value="yes"><label for="koala_grant">Grant</label></div>
+          <div><input type="checkbox" id="koala_jams" name="koala_jams" value="yes"><label for="koala_jams">Jams</label></div>
+          <div><input type="checkbox" id="koala_jilley" name="koala_jilley" value="yes"><label for="koala_jilley">Jilley and baby</label></div>
+          <div><input type="checkbox" id="koala_lucy" name="koala_lucy" value="yes"><label for="koala_lucy">Lucy</label></div>
+          <div><input type="checkbox" id="koala_miffy" name="koala_miffy" value="yes"><label for="koala_miffy">Miffy</label></div>
+          <div><input type="checkbox" id="koala_niley" name="koala_niley" value="yes"><label for="koala_niley">Niley</label></div>
+          <div><input type="checkbox" id="koala_nooka" name="koala_nooka" value="yes"><label for="koala_nooka">Nooka and baby</label></div>
+          <div><input type="checkbox" id="koala_oliver" name="koala_oliver" value="yes"><label for="koala_oliver">Oliver</label></div>
+        </div>
+      </div>
+    
+      <div class="form-row top-align">
+        <label>Level:</label>
+        <div class="option-group">
+          <div><input type="radio" id="level_digital" name="adoption_level" value="digital" checked><label for="level_digital">Digital Certificate ($25)</label></div>
+          <div><input type="radio" id="level_print" name="adoption_level" value="print"><label for="level_print">Printed Certificate & Photo ($50)</label></div>
+          <div><input type="radio" id="level_deluxe" name="adoption_level" value="deluxe"><label for="level_deluxe">Deluxe Package & Plush ($100)</label></div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Gift Details</legend>
+      <div class="form-row">
+        <label for="is_gift">Is this a gift?</label>
+        <div class="option-group">
+          <div><input type="checkbox" id="is_gift" name="is_gift" value="yes"><label for="is_gift">Yes</label></div>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="gift_name">Recipient Name:</label>
+        <input type="text" id="gift_name" name="gift_name">
+      </div>
+    </fieldset>
+
+    <div class="button-row">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+</main>
+
+<footer>
+<p> © 2024 All rights reserved. <img src="images/koala_logo.gif" alt="Image source: Canvas module" width="200" height="194"></p>
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<a href="#">Back to top</a>
+</footer>
+</body>
+</html>
