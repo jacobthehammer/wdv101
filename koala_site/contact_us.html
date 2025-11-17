@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Koala Information Center</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact the Koala Bear National Information Center.">
+  <meta name="author" content="Jacob Hemmerich">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    fieldset {
+      border: 2px solid #268bd2; 
+      border-radius: 8px;
+      background-color: #eee8d5; 
+      padding: 1em 2em;
+    }
+
+    legend {
+      font-family: "EB Garamond", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #268bd2;
+      text-transform: uppercase;
+      letter-spacing: 0.0625em;
+      font-size: 1.5em;
+      padding: 0 0.5em;
+      background-color: #fdf6e3;
+    }
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.25em;
+    }
+
+    .form-row label {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: #586e75; /* Solarized base00 */
+      font-style: normal; /* Override p styles */
+    }
+
+    /* Style text inputs*/
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row select,
+    .form-row textarea {
+      width: 100%;
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 1em;
+      color: #586e75;
+      background-color: #fff;
+      box-sizing: border-box; /* Important for 100% width */
+    }
+
+    /* Container for buttons */
+    .button-row {
+      display: flex;
+      justify-content: flex-end; /* Aligns buttons to the right */
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    /* Button style */
+    .button-row input[type="submit"],
+    .button-row input[type="reset"] {
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    /* Submit button */
+    .button-row input[type="submit"] {
+      background-color: #268bd2; /* Site blue */
+      color: white;
+    }
+    
+    .button-row input[type="submit"]:hover {
+      background-color: #2aa198; /* Site teal */
+      transform: scale(1.02);
+    }
+
+    /* Reset button */
+    .button-row input[type="reset"] {
+      background-color: #dc322f;
+      color: white;
+    }
+
+    .button-row input[type="reset"]:hover {
+      background-color: #cb4b16; 
+      transform: scale(1.02);
+    }
+    @media (min-width: 700px) {
+      .form-row {
+        flex-direction: row;
+        align-items: center; 
+      }
+
+      .form-row label {
+        flex-basis: 150px;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        margin-right: 1em;
+        text-align: right;
+      }
+
+      .form-row input[type="text"],
+      .form-row input[type="email"],
+      .form-row select,
+      .form-row textarea {
+        flex-grow: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<img src="images/koala_banner.jpg" alt="Image source: Canvas module" width="960" height="190">
+<header>
+<h1>Koala Bear National Information Center</h1>
+  <nav>
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="save_koalas.html">Save Koalas</a></li>
+       <li><a href="faq.html">FAQ</a></li>
+       <li><a href="gallery.html">Gallery</a></li>
+       <li>Adopt</li>
+        <!-- This is the new link -->
+       <li><a href="contact_us.html">Contact Us</a></li>
+     </ul>
+  </nav>
+</header>
+
+<main>
+  
+  <form action="form_handler.php" method="POST">
+    <fieldset>
+      <legend>Contact Us!</legend>
+
+      <div class="form-row">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="topic">Topic:</label>
+        <select id="topic" name="topic">
+          <option value="adopt">Adopt a Koala</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="donate">Donate</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+
+      <div class="button-row">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+
+    </fieldset>
+  </form>
+
+</main>
+
+<footer>
+<p> © 2024 All rights reserved. <img src="images/koala_logo.gif" alt="Image source: Canvas module" width="200" height="194"></p>
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<a href="#">Back to top</a>
+</footer>
+</body>
+</html>
