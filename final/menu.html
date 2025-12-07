@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Coffee House - Menu</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="index.html">The Last Coffee House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Our Menu</h1>
+            <p class="lead text-muted">Fresh Roasted. Homemade. Delicious.</p>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <div class="container py-5">
+
+        <!-- Beverages Row (3 Columns) -->
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/Latte.jpg" class="card-img-top" alt="Latte">
+                    <div class="card-body">
+                        <small class="text-muted d-block mb-2">Photo by AussieRalph on Flickr</small>
+                        <h3 class="card-title h4 text-coffee-dark border-bottom pb-2">Coffee & Beverages</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Fresh Roasted Coffee</li>
+                            <li class="list-group-item">Mocha Latte</li>
+                            <li class="list-group-item">Hot Chocolate</li>
+                            <li class="list-group-item">Chai Tea</li>
+                            <li class="list-group-item">Frappe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4 text-coffee-dark border-bottom pb-2">Wine</h3>
+                        <p class="text-muted mb-3">Featuring California Cellars Varietals</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Chardonnay</li>
+                            <li class="list-group-item">Pinot Grigio</li>
+                            <li class="list-group-item">Merlot</li>
+                            <li class="list-group-item">Cabernet Sauvignon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/img/Beer.jpg" class="card-img-top" alt="Beer bottles">
+                    <div class="card-body">
+                        <small class="text-muted d-block mb-2">Photo by Jeremy Keith on Flickr</small>
+                        <h3 class="card-title h4 text-coffee-dark border-bottom pb-2">Beer (bottled only)</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Budweiser / Bud Light</li>
+                            <li class="list-group-item">Coors / Coors Light</li>
+                            <li class="list-group-item">Blue Moon</li>
+                            <li class="list-group-item">Exile Ruthie</li>
+                            <li class="list-group-item">Firecracker Tropical Burn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Row (2 Columns: Sandwiches + Soups) -->
+        <h2 class="section-title mb-4">Food</h2>
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/Breakfast-Sandwich.jpg"
+                                class="img-fluid rounded-start h-100 object-fit-cover" alt="Breakfast Sandwich"
+                                style="object-fit: cover; min-height: 200px;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <small class="text-muted mb-2 d-block">Photo by Hope on Flickr</small>
+                                <h3 class="card-title h4 text-coffee-dark">Sandwiches</h3>
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Grilled Vegetable Panini</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">Tomato, onion, cucumber, romaine lettuce, sprouts,
+                                            muenster cheese & basil pesto served grilled on multigrain panini bread
+                                            (make it a wrap for FREE)</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">East Street Chicken Salad</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">Our FAMOUS chicken salad topped with swiss cheese, artisan
+                                            leaf lettuce, ripe tomato & served on a croissant</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Black Russian Reuben</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">Toasted black Russian bagel filled with pastrami, swiss
+                                            cheese, sauerkraut & thousand island dressing</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Key City Ham Panini</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">Ham, smoked gouda cheese, sliced apple, onion & sweet
+                                            chutney served grilled on multigrain panini bread</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Black Bean Burger</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">Southwest black bean garden burger topped with cheddar
+                                            cheese, lettuce, tomato, onion & southwest ranch dressing on a grilled
+                                            ciabatta square</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Panini Italiano</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">Fresh mozzarella, ripe tomatoes, basil pesto & balsamic
+                                            glaze grilled on multigrain panini bread</p>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">The Grilled Tuna Salad Panini</h5>
+                                            <small>$6.99</small>
+                                        </div>
+                                        <p class="mb-1 small">House tuna salad, sprouts & cheddar cheese grilled on
+                                            multigrain panini bread</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-header fw-bold">Soups</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Signature Soup</h5>
+                        <p class="card-text">Our famous roasted red pepper & gouda.</p>
+                        <h5 class="card-title mt-3">Soup of the Day</h5>
+                        <p class="card-text">Always changing, timed for the season & great with a salad or sandwich.</p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>Bowl: $4.99</span>
+                            <span>Cup: $3.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-secondary mb-3">
+                    <div class="card-header fw-bold">Combos</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Soup & Sandwich
+                            <span class="badge bg-secondary rounded-pill">$7.29</span>
+                        </li>
+                        <li class="list-group-item text-muted small">
+                            Choice of soup & half sandwich (no wraps, bagels or croissants)
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Soup & Salad
+                            <span class="badge bg-secondary rounded-pill">$7.29</span>
+                        </li>
+                        <li class="list-group-item text-muted small">
+                            Choice of soup & any half salad
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card border-0 bg-transparent">
+                    <h3 class="text-coffee-dark border-bottom pb-2">Desserts</h3>
+                    <p class="fst-italic">Enjoy the EVER Changing & always tasty – BAKERY CASE!</p>
+                    <ul class="list-unstyled">
+                        <li>Yogurt Muffins</li>
+                        <li>Pastries</li>
+                        <li>Quiche</li>
+                        <li>Cigars & Strudels</li>
+                        <li>Iced Cinnamon Rolls</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-3">The Last Coffee House</h5>
+                    <p class="mb-1">1604 1224th Street</p>
+                    <p class="mb-1">St. Paul, Minnesota</p>
+                    <p>702-971-1155</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end align-self-center">
+                    <p class="small mb-0">&copy; 2025 The Last Coffee House. Educational Project.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
