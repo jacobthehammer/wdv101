@@ -1,0 +1,95 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Liberata:wght@400;500;700&display=swap');
+
+/* formatted per prompt request though applied globally */
+:root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    --bs-font-serif: "Liberata", serif;
+    
+    /* Coffee House Palette */
+    --coffee-dark: #3E2723;   /* Very dark brown */
+    --coffee-medium: #5D4037; /* Medium brown */
+    --coffee-light: #8D6E63;  /* Light brown */
+    --coffee-tan: #D7CCC8;    /* Pale tan */
+    --coffee-cream: #F5F5F5;  /* Off-white */
+    --coffee-accent: #A1887F;
+    
+    /* Bootstrap Overrides */
+    --bs-primary: var(--coffee-medium);
+    --bs-secondary: var(--coffee-light);
+    --bs-body-bg: var(--coffee-cream);
+    --bs-body-color: #2c2c2c;
+    --bs-link-color: var(--coffee-dark);
+    --bs-link-hover-color: var(--coffee-light);
+}
+
+body {
+    font-family: var(--bs-font-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--bs-font-serif);
+    color: var(--coffee-dark);
+    font-weight: 700;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+    background-color: var(--coffee-dark);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--coffee-tan);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: var(--coffee-dark);
+    color: var(--coffee-tan);
+}
+
+/* Shared Components */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    padding: 100px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Urban Funk Accents */
+.btn-primary {
+    background-color: var(--coffee-medium);
+    border-color: var(--coffee-medium);
+}
+
+.btn-primary:hover {
+    background-color: var(--coffee-dark);
+    border-color: var(--coffee-dark);
+}
+
+.section-title {
+    border-bottom: 2px solid var(--coffee-light);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
